@@ -98,7 +98,7 @@ console.log(false && false); // false
 
 
 
-  console.log(!true);  // false
+console.log(!true);  // false
 console.log(!false); // true
 
 /*
@@ -123,7 +123,7 @@ const ae = "abc";
 switch (ae) {
   case "abc":
     console.log("ae vaut abc");
-    // pas de break : on passe au bloc suivant !
+  // pas de break : on passe au bloc suivant !
   case "def":
     console.log("ae vaut def");
     break;
@@ -156,7 +156,7 @@ let nbr3;
 // 
 // let nbr3 = nombre1;
 nombre1 = nombre2;
-nombre2 =nbr3;
+nombre2 = nbr3;
 
 
 
@@ -169,16 +169,16 @@ if (!(nombre > 100)) {
   }
 */
 
-  let compteur;
+let compteur;
 for (compteur = 1; compteur <= 5; compteur++) {
   console.log(compteur);
 }
 
 
 for (let compteur = 1; compteur <= 10; compteur++) {
-    console.log(compteur);
+  console.log(compteur);
 
-    compteur++; // La variable est modifiée dans le corps de la boucle
+  compteur++; // La variable est modifiée dans le corps de la boucle
 }
 
 
@@ -191,5 +191,318 @@ while (lettre !== "X") {
 
 
 function myFunction4() {
-    document.getElementById("demo4").innerHTML = "Paragraph changed.";
+  document.getElementById("demo4").innerHTML = "Paragraph changed.";
+}
+
+
+console.log("----------------------");
+console.log("EXERICE 3");
+let age = 17;
+
+if (age < 18) {
+  console.log("vous etes mineur");
+}
+else {
+  console.log("vous etes mineur");
+}
+
+console.log("----------------------");
+console.log("EXERICE 4");
+
+
+let animal = "chat";
+let couleur = "marron";
+
+if (animal == "chat" && couleur == "marron") {
+  console.log("c’est mon chat");
+}
+else {
+  console.log("ce n’est pas mon chat");
+}
+
+
+console.log("----------------------");
+console.log("EXERICE 5");
+
+//let animal = "chat";
+//let couleur = "blanc";
+
+if (animal == "chat" && couleur == "blanc") {
+  console.log("c’est mon chat");
+}
+else {
+  console.log("ce n’est pas mon chat");
+}
+
+
+
+
+console.log("----------------------");
+console.log("EXERICE 6")
+/*
+let cadeau = "Iphone";
+
+if((cadeau == "Galaxy S7") || (cadeau == "Galaxy S8")){
+console.log("Merci !!! Ca me fait trop plaisir !");
+}
+else {
+  if (cadeau == "Iphone"){
+    console.log("Jette moi ça !!!");
+    }
+    else{
+    console.log("Merci :)");
+    }
+}
+*/
+
+console.log("----------------------");
+console.log("EXERICE 7")
+
+
+
+let cadeau = "Galaxy S7";
+
+if ((cadeau == "Galaxy S7") || (cadeau == "Galaxy S8")) {
+  console.log("Merci !!! Ca me fait trop plaisir !");
+}
+else {
+  if (cadeau == "Iphone") {
+    console.log("Jette moi ça !!!");
   }
+  else {
+    console.log("Merci :)");
+  }
+}
+
+console.log("----------------------");
+console.log("EXERICE 8")
+
+let animale = "chat";
+let couleurs = "marron";
+
+if ((animale == "chat") && (couleurs == "gris") || (animale == "chien") && (couleurs == "marron")) {
+  //&& est prioritaire sur le ||
+  console.log("c’est mon animal");
+}
+else {
+  console.log("ce n’est pas mon animal");
+}
+
+
+console.log("----------------------");
+console.log("EXERICE 9")
+
+let anima = "chat";
+let couleurr = "marron";
+
+if (anima == "chat" && couleurr == ("gris" || "marron")) {
+  // if (anima == "chat" && (couleurr ==("gris" || "marron")) ) {
+  console.log("c’est mon chat");
+}
+else {
+  console.log("ce n’est pas mon chat");
+}
+
+console.log("----------------------");
+console.log("----------------------");
+console.log("Exemple: 1 (nombre) et '1' (chaîne de caractères) représentent tous les deux le chiffre 1, mais sont de types différents => ils sont égaux seulement selon l'opérateur d'égalité laxiste.");
+console.log("");
+console.log("");
+console.log("");
+console.log("== vérifie l'égalité de deux valeurs de manière laxiste");
+console.log("");
+console.log("");
+console.log("=== vérifie l'égalité de deux valeurs de manière stricte.");
+console.log("----------------------");
+console.log("----------------------");
+console.log("!= vérifie l'inégalité de deux valeurs de manière laxiste.");
+console.log("");
+console.log("");
+console.log("!== vérifie l'inégalité de deux valeurs de manière strict");
+
+console.log("----------------------");
+console.log("----------------------");
+console.log("alert permet d'afficher un message à l'utilisateur;");
+//alert('Bonjour !');
+console.log("----------------------");
+console.log("----------------------");
+console.log("prompt  permet de lui demander de saisir une chaîne de caractères");
+//let sonPrenom = prompt('Quel est ton prénom ?');
+
+
+
+console.log("----------------------");
+console.log("----------------------");
+console.log("« Un algorithme est une suite finie et non ambiguë d’opérations ou d'instructions permettant de résoudre un problème ou d'obtenir un résultat.» ");
+console.log("");
+console.log("Une recette de cuisine peut être réduite à un algorithme, si on peut réduire sa spécification aux éléments constitutifs :");
+console.log("");
+console.log("des entrées (les ingrédients, le matériel utilisé)");
+console.log("");
+console.log("des instructions élémentaires simples, dont l'exécution amène au résultat voulu ");
+console.log("");
+console.log("un résultat : le plat préparé.");
+
+
+console.log("----------------------");
+console.log("----------------------");
+console.log("Une boucle permet de répeter plusieurs fois une séquence d'instuctions ");
+console.log("");
+console.log("Interrompre l'exécution d'une boucle: break");
+console.log("");
+
+
+
+console.log("----------------------");
+console.log("----------------------");
+console.log("Application: FizzBuzz");
+console.log("");
+
+/*
+console.log("1 Écrire un programme qui affiche les nombres de 1 à 199 (compris) dans la console.");
+
+let nbr = 1;
+
+while ( nbr < 100 )
+{
+
+  console.log(nbr);
+  nbr ++;
+
+}
+
+*/
+
+
+/*
+console.log("----------------------");
+console.log("----------------------");
+
+
+console.log("Pour les multiples de 3, afficher Fizz au lieu du nombre");
+
+
+let nbr = 1;
+
+while ( nbr < 100 )
+{
+
+
+if(nbr % 3 == 0) {
+  console.log("fizz");
+}
+else 
+  {
+    console.log(nbr);
+  }
+  
+  nbr ++;
+
+}
+
+
+*/
+
+/*
+console.log("----------------------");
+console.log("----------------------");
+
+
+
+let nbr = 1;
+
+while ( nbr < 100 )
+{
+
+
+if(nbr %  5 === 0) {
+  console.log("buzz");
+}
+
+else 
+  {
+    console.log(nbr);
+  }
+  
+  nbr ++;
+
+}
+*/
+
+
+/*
+console.log("----------------------");
+console.log("----------------------");
+
+
+
+
+let nbr = 1;
+
+while ( nbr < 100 )
+{
+if((nbr %  5 === 0) && (nbr %  3 === 0))  {
+  console.log("fizzBuzz");
+}
+else{
+  console.log(nbr);
+}
+  nbr ++;
+}
+
+*/
+
+
+/*
+console.log("----------------------");
+console.log("----------------------");
+
+
+let nbr = 1;
+
+while (nbr < 100) {
+
+  if ((nbr % 5 === 0) && (nbr % 3 === 0)) {
+    console.log("fizzBuzz");
+  }
+
+  else if ((nbr % 3 === 0)) {
+    console.log("fizz");
+  }
+
+  else if ((nbr % 5 === 0)) {
+    console.log("buzz");
+  }
+  else {
+    console.log(nbr);
+  }
+
+  nbr++;
+}
+
+*/
+
+
+/*
+
+console.log("----------------------");
+console.log("----------------------");
+console.log("Correction fizzbuzz");
+console.log("");
+let nb = 1;
+
+for (nb; nb <= 199; nb++) {
+
+   if((nb % 3 === 0) && (nb % 5 === 0)) {
+       console.log("fizzbuzz");
+   } else if(nb % 3 === 0) {
+       console.log("fizz");
+   }
+   else if(nb % 5 === 0) {
+       console.log("buzz");
+   }
+   else {
+       console.log(nb);
+   }
+}
+*/
