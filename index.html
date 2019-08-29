@@ -115,5 +115,180 @@ document.getElementById("myP").innerHTML = "My first paragraph.";
 
 
 
+<h1>shifumi</h1>
+<p id="demo7"></p>
+
+<script>
+
+    let scoreOrdi =0;
+    let scoreJoueur=0;
+
+for(let i = 0; i<3; i++){
+
+    console.log("MANCHE" + (i+1));
+    //////////////////
+
+  //  let rand = Math.floor(Math.random() * 3);
+  //  document.getElementById("demo7").innerHTML = rand;
+ //   choix1 = document.getElementById("demo7").innerHTML
+
+ choix1 = Math.floor(Math.random() * 3);
+   
+
+
+    /*
+switch (choix1) {
+  case 0:
+  choix1 = "pierre";
+    break;
+    case 1:
+    choix1 = "feuille";
+    break;
+    case 2:
+    choix1 = "ciseau";
+    break;
+}
+*/
+
+if(choix1 == 0)
+{
+    choix1="P"
+}
+else if(choix1 == 1)
+{
+    choix1="C"
+}
+else(choix1 == 2)
+{
+    choix1="F"
+}
+
+
+var choix2 = prompt("P,C,F");
+
+console.log(choix1);
+console.log(choix2);
+
+/*
+if(choix1 == choix2)
+{
+    console.log("egalite"); 
+}
+if(  choix1=="P"){
+    if(choix2 == "C"){
+        console.log("perdu"); 
+    }
+    if(choix2 == "F"){
+        console.log("gagne"); 
+    }
+}
+else if (  choix1=="C"){
+    if(choix2 == "P"){
+        console.log("gagne"); 
+    }
+    if(choix2 == "F"){
+        console.log("perdu"); 
+    }
+}
+else if(choix1=="F"){
+    if(choix2 == "C"){
+        console.log("gagne"); 
+    }
+    if(choix2 == "P"){
+        console.log("perdu"); 
+    }
+    
+}
+
+*/
+
+
+
+
+function comparer(choix1, choix2) {
+  if(choix1 == choix2)
+{
+    console.log("egalite");
+  //  return null; 
+  return "PERSONNE NE"; 
+}
+if(  choix1=="P"){
+    if(choix2 == "C"){
+        console.log("perdu");
+        scoreOrdi++;
+      //  return  choix1;
+        return  "l ordinateur a";
+    }
+    if(choix2 == "F"){
+        console.log("gagne"); 
+        scoreJoueur++;
+      //  return  choix2;
+        return  "vous avez";
+    }
+}
+else if (  choix1=="C"){
+    if(choix2 == "P"){
+        console.log("gagne");
+        scoreJoueur++;
+       // return  choix2; 
+        return  "vous avez";
+    }
+    if(choix2 == "F"){
+        console.log("perdu"); 
+        scoreOrdi++;
+       // return  choix1;
+        return  "l ordinateur a";
+    }
+}
+else if(choix1=="F"){
+    if(choix2 == "C"){
+        console.log("gagne"); 
+        scoreJoueur++;
+       // return  choix2;
+        return  "vous avez";
+    }
+    if(choix2 == "P"){
+        console.log("perdu"); 
+        scoreOrdi++;
+        //return  choix1;
+        return  "l ordinateur a";
+    }
+    
+}
+}
+
+
+console.log(comparer(choix1, choix2) + "  GAGNE" );
+console.log("scoreOrdi =" + scoreOrdi);
+console.log("scoreJoueur =" + scoreJoueur);
+
+}
+
+
+
+if(scoreOrdi > scoreJoueur){
+    console.log(" DESOLE L ORDI A GAGNE LA PARTIE"); 
+}
+else if (scoreOrdi < scoreJoueur){
+    console.log("BRAVO VOUS AVEZ REMPORTER LA PARTIE"); 
+}
+else{
+    console.log("MATCH NUL PERSONNE NE GAGNE"); 
+}
+
+
+
+</script>
+
+
+
+
+choix de l ordinateur
+<input id="choixordi" class="form-control mr-sm-2" type="text" placeholder="Search">
+
+choix de l utilisateur
+<input id="monchoix"  class="form-control mr-sm-2" type="text" placeholder="Search">
+
+
 
 </html>

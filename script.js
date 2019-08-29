@@ -506,3 +506,9 @@ for (nb; nb <= 199; nb++) {
    }
 }
 */
+
+
+
+function randomizer () {
+  return nombre * 10;
+}
